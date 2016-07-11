@@ -16,10 +16,12 @@
     sql: ${TABLE}.campaign_name
 
   - dimension: context_ip
+    hidden: true
     type: string
     sql: ${TABLE}.context_ip
 
   - dimension: context_library_name
+    hidden: true
     type: string
     sql: ${TABLE}.context_library_name
 
@@ -32,6 +34,7 @@
     sql: ${TABLE}.context_traits_client_id
 
   - dimension: context_traits_email
+    view_label: "Email Address"
     type: string
     sql: ${TABLE}.context_traits_email
 
@@ -44,10 +47,12 @@
     sql: ${TABLE}.email_subject
 
   - dimension: event
+    hidden: true
     type: string
     sql: ${TABLE}.event
 
   - dimension: event_text
+    view_label: "Event"
     type: string
     sql: ${TABLE}.event_text
 
@@ -76,11 +81,13 @@
     sql: ${TABLE}.user_id
 
   - dimension: uuid
+    hidden: true
     type: number
     value_format_name: id
     sql: ${TABLE}.uuid
 
   - dimension_group: uuid_ts
+    hidden: true
     type: time
     timeframes: [time, date, week, month]
     sql: ${TABLE}.uuid_ts
