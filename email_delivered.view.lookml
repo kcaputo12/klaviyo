@@ -34,7 +34,7 @@
     sql: ${TABLE}.context_traits_client_id
 
   - dimension: context_traits_email
-    view_label: "Email Address"
+    label: "Email Address"
     type: string
     sql: ${TABLE}.context_traits_email
 
@@ -52,7 +52,7 @@
     sql: ${TABLE}.event
 
   - dimension: event_text
-    view_label: "Event"
+    label: "Event"
     type: string
     sql: ${TABLE}.event_text
 
